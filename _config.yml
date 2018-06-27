@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Livid 3D Printing
-description: A bold typographic theme inspired by Swiss design.
+description: Livid 3D is a 3D printing / renting service created by James Robinson and operating in Salisbury, United Kingdom.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_repo: jekyll # the GitHub repo name for your project
