@@ -14,11 +14,11 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Livid 3D Printing
-description: Livid 3D is a 3D printing / renting service created by James Robinson and operating in Salisbury, United Kingdom.
+description: Livid 3D is a 3D printing / renting service created by James Robinson and operating in Salisbury.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: jekyll # the GitHub repo name for your project
-github_username: jekyll
+github_repo: livid-3d-website # the GitHub repo name for your project
+github_username: jamesthelivid
 
 # Optional social link, you can choose from the following options:
 # twitter (default), instagram, medium, or dribbble
@@ -27,7 +27,7 @@ social_username: jamestherobinson
 
 # Set theme color here
 # Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
-theme_color: blue
+theme_color: black
 
 # Build settings
 markdown: kramdown
