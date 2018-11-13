@@ -1,18 +1,31 @@
 ---
 layout: default
 ---
-<article class="container px-2 mx-auto mb4" itemscope itemtype="http://schema.org/BlogPosting">
-  <h1 class="h0 col-9 sm-width-full py-4 mt-3 inline-block" itemprop="name headline">{{ page.title }}</h1>
-  <div class="col-4 sm-width-full mt-1 border-top-thin ">
-    <p class="mb-3 py-2 bold h4"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></p>
-  </div>
 
-  <div class="prose" itemprop="articleBody">
-      {{ content }}
-  </div>
+{% include wrap.html %}
 
-</article>
+<div class="container mtb">
+    <div class="row">
+        <! -- SINGLE POST -->
+        <div class="col-lg-8">
+            <! -- Blog Post  -->
+            <p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
+            <a href="{{ page.url | prepend: site.baseurl }}"><h3 class="ctitle">{{ page.title }}</h3></a>
+            <p><csmall>{{ page.date | date: "%b %-d, %Y" }}. | By: {{ page.author }}</csmall></p>
+              
+            {{ content }}
 
-<div class="container mx-auto px-2 py-2 clearfix">
-  {% include previous-next.html %}
-</div>
+            <div class="spacing"></div>
+            <!-- <h6>SHARE:</h6>
+            <p class="share">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-tumblr"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>		 		
+            </p> -->
+        </div><! --/col-lg-8 -->
+        
+        {% include sidebar.html %}
+
+    </div><! --/row -->
+</div><! --/container -->

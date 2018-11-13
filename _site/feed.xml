@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LIVID 3D</title>
+    <description>Order your products to be 3D printed or look at some of our prrevious work.</description>
+    <link>http://livid3d.com/</link>
+    <atom:link href="http://livid3d.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 13 Nov 2018 16:11:17 +0000</pubDate>
+    <lastBuildDate>Tue, 13 Nov 2018 16:11:17 +0000</lastBuildDate>
+    <generator>Jekyll v3.8.3</generator>
+    
+  </channel>
+</rss>

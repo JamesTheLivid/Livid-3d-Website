@@ -1,20 +1,15 @@
-<header class="border-bottom-thick px-2 clearfix">
-  <div class="left sm-width-full py-1 mt-1 mt-lg-0">
-    <a class="align-middle link-primary text-accent" href="{{ site.baseurl }}/">
-      {{ site.title }}
-    </a>
-  </div>
-  <div class="right sm-width-full">
-    <ul class="list-reset mt-lg-1 mb-2 mb-lg-1">
-      {% for my_page in site.pages %}
-        {% if my_page.title %}
-        <li class="inline-block">
-          <a class="align-middle link-primary mr-2 mr-lg-0 ml-lg-2" href="{{ my_page.url | prepend: site.baseurl }}">
-            {{ my_page.title }}
-          </a>
-        </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
-</header>
+<div id="headerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>Print your designs and get brilliant results</h3>
+                <h1>Livid 3D printing.</h1>
+                <h5>Livid 3D is the best 3D printing service in Salisbury</h5>
+                <h5>Order your models today.</h5>				
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 himg">
+                <img src="{{ "/assets/img/browser.png" | prepend: site.baseurl }}" class="img-responsive">
+            </div>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /headerwrap -->

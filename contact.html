@@ -1,0 +1,42 @@
+---
+layout: contact
+title: Contact
+permalink: /contact/
+---
+
+<div id="contactwrap"></div>
+
+<div class="container mtb">
+    <div class="row">
+        <div class="col-lg-8">
+            <h4>Just Get In Touch!</h4>
+            <div class="hline"></div>
+                <p>{{ site.about }}</p>
+        </div><! --/col-lg-8 -->
+
+        <div class="col-lg-4">
+                <br/>
+            <h4>Our Address</h4>
+            <div class="hline"></div>
+                <p>
+                    {% for line in site.address.first.lines %}
+                        {{ line }} <br>
+                    {% endfor %}
+                </p>
+                <br/>
+                <h4>Emails and stuff!</h4>
+                <div class="hline"></div>
+                <p>
+                    Email: {{ site.email }}<br/>       
+                    　  　  　james@livid3d.com<br/>
+                </p>
+                <br/>
+                <h4>Phone</h4>
+                <div class="hline"></div>
+                <p>
+                    Phone: {{ site.tel }}<br/>       
+                </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+    </div><! --/row -->
+</div><! --/container -->

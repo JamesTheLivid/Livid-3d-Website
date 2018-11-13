@@ -1,33 +1,91 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole site, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing these this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+### GENERAL SETTINGS ###
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Livid 3D
-description: Livid 3D is a 3D printing / renting service operating in the UK.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_repo: livid-3d-website # the GitHub repo name for your project
-github_username: jamesthelivid
-
-# Optional social link, you can choose from the following options:
-# twitter (default), instagram, medium, or dribbble
-social_link: instagram
-social_username: jamestherobinson
-
-# Set theme color here
-# Choose from: black (default), blue, gray, magenta, orange, red, white, and yellow.
-theme_color: black
+title: LIVID 3D
+description: "Order your products to be 3D printed or look at some of our prrevious work."
+analytics: #Google analytics code in the format XX-nnnnnnnn-n
+baseurl: "" #important: start with /
+url: "http://livid3d.com"
 
 # Build settings
 markdown: kramdown
+permalink: /:categories/:title
+excerpt_separator: <!--more--> #use this in posts to define how long the excerpt of the post (that is shown on the Blog page) is
+
+colors:  #in hex code if not noted else
+  primary: "#00b3fe" #"#F70031"
+  primary_rgb: "0,179,254" #"247,0,49" #rgb of the primary. Needed in some places for the transparency effect.
+  secondary: "#384452" #"#33004D"
+  link: "#428bca"
+  link_hover: "#01b2fe"
+  footer_heading: "#ffffff"
+  footer_content: "#bfc9d3"
+
+# Making projects separate from posts
+collections:
+  projects:
+    output: true
+    permalink: /projects/:title/
+  questions:
+    output: true
+    permalink: /questions/:title/
+
+### CONTACT SETTINGS ###
+
+# Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
+social:
+  - title: dribbble
+    url:
+  - title: facebook
+    url:
+  - title: twitter
+    url:
+  - title: instagram
+    url:
+  - title: tumblr
+    url:
+
+# Postal address (add as many lines as necessary). Shown in footer and on Contact page.
+address:
+  - lines:
+    - Salisbury, Wiltshire,
+    - United Kingdom.
+    -
+    - Build  2018-11-13  16:13:26  GitHub
+email: contact@livid3d.com
+tel: 999
+
+
+### GENERAL DATA FOR VARIOUS LOCATIONS ###
+
+# Members information. Shown on About page.
+members:
+  - name: James Robinson
+    position: CEO
+    text: James is a expert in 3D design and at 3D printing.
+    img: team01.jpg
+    social:
+      - title: envelope #use for email address
+        url: mailto:james@livid3d.com
+      - title: twitter
+        url: http://twitter.com/handle
+
+# Clients information. Shown on Home and About pages.
+clients:
+  - name: dribbble
+    img: client01.png
+  - name: Code is Poetry
+    img: client02.png
+  - name: Vimeo
+    img: client03.png
+  - name: VimeoPro
+    img: client04.png
+
+# Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
+about: "Livid 3D is a 3D printing order business based in Salisbury."
+
+# Testimonial content. Shown on Home and About page.
+testimonial:
+    message: "I am flabbergasted by the quality of service that I got from Livid 3D: not only did they give me the product I wanted, they gave me something magnitudes more valuable - quality customer service. If Livid 3D was a heart surgeon and I had a broken heart, not only would their team give me the heart operation, they would replace my bones, my brain, my immune system, my lungs and my liver. That's how good they are."
+    author: Olly Briton
+    position: Chief Executive Cloud E-commerce Application and Production Officer
